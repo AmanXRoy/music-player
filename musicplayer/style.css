@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(46, 46, 46);
+}
+
+.player--container{
+    color: rgb(36, 36, 36);
+    background: rgb(255, 255, 255);
+    padding: 2.5rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.player--container .track--name{
+    text-transform: capitalize;
+
+}
+.player--container .track--artist{
+    font-size: 1rem;
+    color: rgb(71, 71, 71);
+    margin: 1rem 0;
+    opacity: 0.8;
+}
+.player--container img{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(7, 7, 7);
+}
+.anime{
+    animation: rotate 3s linear infinite; 
+}
+
+.player--btn{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.player--btn .fa-pause{
+    background: rgb(43, 43, 43);
+    padding: 1rem;
+    border-radius: 50%;
+    color: rgb(235, 235, 235);
+}
+.player--btn .fa-play{
+    background: rgb(34, 34, 34);
+    padding: 1rem;
+    border-radius: 50%;
+    color: rgb(248, 247, 247);
+    
+}
+.player--btn button{
+
+    background: transparent;
+    border: none;
+
+    padding: 1rem;
+    margin: 0.6rem 1rem;
+}
+.player--btn button i{
+    color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
